@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="ostrich-sans-medium.ttf">
+        <array key="ostrich-sans-medium.otf">
             <string>OstrichSans-Medium</string>
         </array>
     </customFonts>
@@ -498,12 +498,32 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Vg9-65-gma">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenCollectionViewCell" id="Vg9-65-gma" customClass="MenCollectionViewCell" customModule="iosAlphaEcommerce" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="181" height="249"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FoC-jg-NWz">
                                             <rect key="frame" x="0.0" y="0.0" width="181" height="249"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iBD-KL-Blx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="181" height="220"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEO-Bd-Uu6">
+                                                    <rect key="frame" x="8" y="220" width="165" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mEO-Bd-Uu6" firstAttribute="top" secondItem="iBD-KL-Blx" secondAttribute="bottom" id="3Qg-5N-j29"/>
+                                                <constraint firstItem="iBD-KL-Blx" firstAttribute="top" secondItem="FoC-jg-NWz" secondAttribute="top" id="97m-Y0-COk"/>
+                                                <constraint firstItem="iBD-KL-Blx" firstAttribute="leading" secondItem="FoC-jg-NWz" secondAttribute="leading" id="Aoo-xM-06l"/>
+                                                <constraint firstAttribute="bottom" secondItem="mEO-Bd-Uu6" secondAttribute="bottom" constant="8" id="MTd-og-MBh"/>
+                                                <constraint firstAttribute="trailing" secondItem="iBD-KL-Blx" secondAttribute="trailing" id="Pl4-o4-h2h"/>
+                                                <constraint firstItem="mEO-Bd-Uu6" firstAttribute="leading" secondItem="FoC-jg-NWz" secondAttribute="leading" constant="8" id="QHk-1n-87z"/>
+                                                <constraint firstAttribute="trailing" secondItem="mEO-Bd-Uu6" secondAttribute="trailing" constant="8" id="ShV-Tm-mbc"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="181" height="249"/>
                                     </collectionViewCell>
