@@ -82,6 +82,17 @@
                     <view key="view" contentMode="scaleToFill" id="DKj-AE-RRO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YmP-J2-7Vt">
+                                <rect key="frame" x="141" y="683" width="112" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="View Single"/>
+                                <connections>
+                                    <segue destination="txN-zz-uYu" kind="show" id="ogu-Ge-1i9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iy0-a4-m1z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -91,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="3911" y="430"/>
         </scene>
-        <!--View Controller-->
+        <!--Women View Controller-->
         <scene sceneID="dpN-CM-iXG">
             <objects>
-                <viewController id="txN-zz-uYu" sceneMemberID="viewController">
+                <viewController id="txN-zz-uYu" customClass="womenViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IhZ-Mt-ap0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,14 +237,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp2-D1-BKW">
-                                <rect key="frame" x="46" y="715" width="290" height="35"/>
+                                <rect key="frame" x="22" y="715" width="344" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Add to Cart">
+                                    <backgroundConfiguration key="background" cornerRadius="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addToCartButton:" destination="txN-zz-uYu" eventType="touchUpInside" id="hXB-TR-CUe"/>
+                                    <action selector="addToCartButton:" destination="Fu0-FK-EAt" eventType="touchUpInside" id="sBo-jZ-QBc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NoB-3c-osn"/>
@@ -253,6 +268,7 @@
                     <navigationItem key="navigationItem" id="PBm-zE-dBi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysZ-ez-6HL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Fu0-FK-EAt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4996.1832061068699" y="429.57746478873241"/>
         </scene>
