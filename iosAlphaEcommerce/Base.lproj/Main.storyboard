@@ -134,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="1937" y="873"/>
         </scene>
-        <!--View Controller-->
+        <!--MEN-->
         <scene sceneID="AzB-xO-Q35">
             <objects>
                 <viewController id="TCT-h0-lpi" sceneMemberID="viewController">
@@ -144,7 +144,7 @@
                         <viewLayoutGuide key="safeArea" id="CWq-k9-lht"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VqC-LR-yOa"/>
+                    <navigationItem key="navigationItem" title="MEN" id="VqC-LR-yOa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbL-LW-INC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
