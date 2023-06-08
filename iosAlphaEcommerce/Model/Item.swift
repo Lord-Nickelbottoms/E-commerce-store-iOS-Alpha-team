@@ -8,6 +8,17 @@
 import Foundation
 import UIKit
 
+struct Count{
+    var counting : Int
+}
+class coun {
+    var cc : Int = 3
+}
+
+//var counts: [Count] = [
+//    Count(counting: 0)
+//]
+
 struct Item{
     let gender: String
     let category: String
@@ -37,5 +48,5 @@ let items: [Item] = [
     
     Item(gender: "Womens", category: "Skirts", name: "Mini Skirt", size: "XL", price: 250.99, colour: "Purple", image: #imageLiteral(resourceName: "purpleskirt")),
     
-    Item(gender: "Womens", category: "Tops", name: "Strapless", size: "M", price: 250.99, colour: "Black", image: #imageLiteral(resourceName: "blackstriplesstop")),
+    Item(gender: "Womens", category: "Tops", name: "Strapless", size: "M", price: 250.99, colour: "Black", image: #imageLiteral(resourceName: "blackstriplesstop"))
 ]
