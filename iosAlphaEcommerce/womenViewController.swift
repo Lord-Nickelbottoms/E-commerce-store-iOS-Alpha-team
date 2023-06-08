@@ -9,18 +9,76 @@ import UIKit
 
 class womenViewController: UIViewController {
 var count = 0
-    var da = [Count]()
-    var dd = coun();
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
-    var searchProduct = [Item]()
+    var searchProduct = [Item1]()
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         
-        searchProduct = items
+        searchProduct = items1
+    }
+    @IBAction func btnAll(_ sender: UIButton) {
+        searchProduct = []
+        for word in items1{
+            if word.category == "Pants" || word.category == "Jackets" || word.category == "" || word.category == "Dresses" || word.category == "Shirts"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+    }
+   
+    @IBAction func btnJackets(_ sender: UIButton) {
+        searchProduct = []
+        for word in items1{
+            if word.category == "Jackets"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+        
+    }
+    @IBAction func btnShirts(_ sender: UIButton) {
+        searchProduct = []
+        for word in items1{
+            if word.category == "Shirts"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+        
+    }
+    @IBAction func btnDresses(_ sender: UIButton) {
+        searchProduct = []
+        for word in items1{
+            if word.category == "Dresses"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+        
+    }
+    @IBAction func btnPants(_ sender: UIButton) {
+        searchProduct = []
+        for word in items1{
+            if word.category == "Pants"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
     }
 }
 extension womenViewController: UICollectionViewDataSource{
@@ -56,9 +114,9 @@ extension womenViewController: UISearchBarDelegate{
         searchProduct = []
         if searchText == ""
         {
-            searchProduct = items
+            searchProduct = items1
         }
-        for word in items{
+        for word in items1{
             if word.name.lowercased().contains(searchText.lowercased())
             {
                 searchProduct.append(word)

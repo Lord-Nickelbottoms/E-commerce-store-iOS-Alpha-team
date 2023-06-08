@@ -68,7 +68,7 @@ class menViewController: UIViewController {
     @IBAction func btnAll(_ sender: UIButton) {
         searchProduct = []
         for word in items{
-            if word.category == "Pants" || word.category == "Jackets" || word.category == "Shorts" || word.category == "Dresses" || word.category == "Shirts"
+            if word.category == "Pants" || word.category == "Jackets" || word.category == "Shirts" || word.category == "Shorts" || word.category == "TShirts"
             {
                 searchProduct.append(word)
 

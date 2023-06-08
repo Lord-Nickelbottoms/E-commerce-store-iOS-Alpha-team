@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j0S-8C-Ae6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j0S-8C-Ae6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -215,6 +215,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="btnJackets:" destination="TCT-h0-lpi" eventType="touchUpInside" id="EBc-lO-Nf1"/>
+                                            <action selector="btnJackets:" destination="uYM-rM-ln9" eventType="touchUpInside" id="ZvU-o1-kaZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9M-rx-Jmd">
@@ -225,6 +226,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="btnShirts:" destination="uYM-rM-ln9" eventType="touchUpInside" id="4jZ-6e-1pd"/>
                                             <action selector="btnTshirts:" destination="TCT-h0-lpi" eventType="touchUpInside" id="B9q-mS-Hzx"/>
                                         </connections>
                                     </button>
@@ -236,6 +238,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="btnDresses:" destination="uYM-rM-ln9" eventType="touchUpInside" id="Pww-2C-Uck"/>
                                             <action selector="btnShirts:" destination="TCT-h0-lpi" eventType="touchUpInside" id="u5d-IE-6CX"/>
                                         </connections>
                                     </button>
@@ -248,6 +251,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="btnPants:" destination="TCT-h0-lpi" eventType="touchUpInside" id="7dJ-It-b46"/>
+                                            <action selector="btnPants:" destination="uYM-rM-ln9" eventType="touchUpInside" id="Rs3-ks-xCf"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pse-WK-fvY">
@@ -263,6 +267,7 @@
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="btnAll:" destination="uYM-rM-ln9" eventType="touchUpInside" id="56U-OU-1v4"/>
                                             <action selector="btnAll:" destination="TCT-h0-lpi" eventType="touchUpInside" id="5My-Qs-0UE"/>
                                         </connections>
                                     </button>

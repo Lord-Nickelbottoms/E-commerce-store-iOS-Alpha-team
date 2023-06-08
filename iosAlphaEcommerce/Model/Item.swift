@@ -38,15 +38,6 @@ let items: [Item] = [
     
     Item(gender: "Mens", category: "Shorts", name: "Corduroy", size: "XL", price: 300.99, colour: "White", image: #imageLiteral(resourceName: "white shorts")),
     
-    Item(gender: "Mens", category: "T-shirts", name: "Round Neck", size: "S", price: 500.00, colour: "Navy", image: #imageLiteral(resourceName: "navyshirt")),
+    Item(gender: "Mens", category: "Tshirts", name: "Round Neck", size: "S", price: 500.00, colour: "Navy", image: #imageLiteral(resourceName: "navyshirt")),
     
-    Item(gender: "Womens", category: "Jackets", name: "Coat", size: "S", price: 730.00, colour: "Black", image: #imageLiteral(resourceName: "blackCoat")),
-    
-    Item(gender: "Womens", category: "Pants", name: "Jean", size: "M", price: 799.99, colour: "Blue", image: #imageLiteral(resourceName: "blueJeans")),
-    
-    Item(gender: "Womens", category: "Dresses", name: "Bodycon", size: "L", price: 250.99, colour: "Pink", image: #imageLiteral(resourceName: "pinkbodycom")),
-    
-    Item(gender: "Womens", category: "Skirts", name: "Mini Skirt", size: "XL", price: 250.99, colour: "Purple", image: #imageLiteral(resourceName: "purpleskirt")),
-    
-    Item(gender: "Womens", category: "Tops", name: "Strapless", size: "M", price: 250.99, colour: "Black", image: #imageLiteral(resourceName: "blackstriplesstop"))
 ]
