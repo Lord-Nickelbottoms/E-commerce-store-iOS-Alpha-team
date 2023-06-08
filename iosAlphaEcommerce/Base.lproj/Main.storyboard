@@ -118,7 +118,7 @@
             </objects>
             <point key="canvasLocation" x="4996.1832061068699" y="429.57746478873241"/>
         </scene>
-        <!--Item 2-->
+        <!--Cart-->
         <scene sceneID="c6z-Eb-GlR">
             <objects>
                 <viewController id="tnc-Mq-6vr" sceneMemberID="viewController">
@@ -128,7 +128,7 @@
                         <viewLayoutGuide key="safeArea" id="mRx-i1-tZM"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="6OR-vW-ber"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart.fill" catalog="system" id="6OR-vW-ber"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8K-Iy-k3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,6 +206,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
