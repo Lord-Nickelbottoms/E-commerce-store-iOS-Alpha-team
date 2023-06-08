@@ -20,7 +20,62 @@ class menViewController: UIViewController {
         //self.collectionView.reloadData()
         searchProduct = items
     }
+    @IBAction func btnPants(_ sender: UIButton) {
+        searchProduct = []
+        for word in items{
+            if word.category == "Pants"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+    }
+    @IBAction func btnShirts(_ sender: UIButton) {
+        searchProduct = []
+        for word in items{
+            if word.category == "Shirts"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+    }
     
+    @IBAction func btnTshirts(_ sender: UIButton) {
+        searchProduct = []
+        for word in items{
+            if word.category == "Tshirts"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+    }
+    @IBAction func btnJackets(_ sender: UIButton) {
+        searchProduct = []
+        for word in items{
+            if word.category == "Jackets"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+    }
+    @IBAction func btnAll(_ sender: UIButton) {
+        searchProduct = []
+        for word in items{
+            if word.category == "Pants" || word.category == "Jackets" || word.category == "Shorts" || word.category == "Dresses" || word.category == "Shirts"
+            {
+                searchProduct.append(word)
+
+            }
+        }
+        self.collectionView.reloadData()
+    }
 }
 extension menViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -474,6 +474,9 @@
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnJackets:" destination="TCT-h0-lpi" eventType="touchUpInside" id="tfm-gd-6fm"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTW-wl-l9E">
                                         <rect key="frame" x="177" y="14.000000000000004" width="75.333333333333314" height="38.333333333333343"/>
@@ -482,6 +485,9 @@
                                             <backgroundConfiguration key="background" cornerRadius="20"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnTshirts:" destination="TCT-h0-lpi" eventType="touchUpInside" id="2Cn-wI-XUM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQb-CL-fdz">
                                         <rect key="frame" x="254.33333333333337" y="14.000000000000004" width="68" height="38.333333333333343"/>
@@ -490,6 +496,9 @@
                                             <backgroundConfiguration key="background" cornerRadius="20"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnShirts:" destination="TCT-h0-lpi" eventType="touchUpInside" id="j6W-tg-WYf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETE-P9-DmU">
                                         <rect key="frame" x="324.33333333333331" y="14.000000000000004" width="66.666666666666686" height="38.333333333333343"/>
@@ -498,6 +507,9 @@
                                             <backgroundConfiguration key="background" cornerRadius="20"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnPants:" destination="TCT-h0-lpi" eventType="touchUpInside" id="pSg-4k-7Pt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqB-4Z-QFe">
                                         <rect key="frame" x="2" y="14.000000000000004" width="75" height="38.333333333333343"/>
@@ -511,6 +523,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                             <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnAll:" destination="TCT-h0-lpi" eventType="touchUpInside" id="ue9-k9-FZy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
