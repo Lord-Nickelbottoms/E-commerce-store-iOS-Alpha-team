@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */; };
+		4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */; };
 		ABAC185D2A31D98B00B92BBA /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */; };
 		AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */; };
 		AD3EB30E2A31B19F00D2A24F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.otf"; sourceTree = "<group>"; };
+		4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.ttf"; sourceTree = "<group>"; };
 		ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		AD3EB3082A31B19F00D2A24F /* iosAlphaEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAlphaEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BBDD86C2A31E6D300B4B563 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */,
+				4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		AD3EB2FF2A31B19F00D2A24F = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		AD3EB30A2A31B19F00D2A24F /* iosAlphaEcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				4BBDD86C2A31E6D300B4B563 /* Fonts */,
 				CB3A26B02A31B64700A92405 /* Model */,
 				AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */,
 				AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */,
@@ -150,7 +164,9 @@
 			files = (
 				AD3EB3182A31B1A100D2A24F /* LaunchScreen.storyboard in Resources */,
 				AD3EB3152A31B1A100D2A24F /* Assets.xcassets in Resources */,
+				4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */,
 				AD3EB3132A31B19F00D2A24F /* Main.storyboard in Resources */,
+				4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
