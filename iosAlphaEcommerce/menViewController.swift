@@ -126,6 +126,24 @@ extension menViewController: UISearchBarDelegate{
 
 extension menViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(identifier: "SingleViewController") as? SingleViewController
+        //    let vc = storyboard?.instantiateViewController(identifier: "DetailViewController") as? DetailViewController
+//        let defaults = UserDefaults.standard
+//
+//        defaults.set(count, forKey: "Countt")
+        
+        vc?.name = searchProduct[indexPath.row].name
+        vc?.category = searchProduct[indexPath.row].category
+        vc?.colour = searchProduct[indexPath.row].colour
+        vc?.price = searchProduct[indexPath.row].price
+        vc?.gender = searchProduct[indexPath.row].gender
+        vc?.imgname = searchProduct[indexPath.row].image
+        vc?.size = searchProduct[indexPath.row].size
+//        vc?.count = count
+            self.navigationController?.pushViewController(vc!, animated: true)
+        
         print(items[indexPath.row].category)
     }
 }
+

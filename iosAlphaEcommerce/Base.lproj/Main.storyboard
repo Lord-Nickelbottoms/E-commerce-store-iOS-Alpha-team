@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="ostrich-sans-medium.otf">
+        <array key="ostrich-sans-medium.ttf">
             <string>OstrichSans-Medium</string>
         </array>
     </customFonts>
@@ -379,10 +379,10 @@
             </objects>
             <point key="canvasLocation" x="4837.4045801526718" y="429.57746478873241"/>
         </scene>
-        <!--Women View Controller-->
+        <!--Single View Controller-->
         <scene sceneID="dpN-CM-iXG">
             <objects>
-                <viewController id="txN-zz-uYu" customClass="womenViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingleViewController" id="txN-zz-uYu" customClass="SingleViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IhZ-Mt-ap0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -543,6 +543,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PBm-zE-dBi"/>
+                    <connections>
+                        <outlet property="imgItem" destination="cuK-NU-0tA" id="xOd-fp-eBl"/>
+                        <outlet property="lblCategory" destination="UVl-aj-vun" id="sMd-JP-bm4"/>
+                        <outlet property="lblColor" destination="o6v-pR-kiI" id="0vL-0Z-nXI"/>
+                        <outlet property="lblGender" destination="XqO-Ha-xNO" id="DoI-Yh-9wW"/>
+                        <outlet property="lblL" destination="8Vo-fw-lKS" id="YiB-vi-aMf"/>
+                        <outlet property="lblM" destination="hdI-b7-oYu" id="i6q-Rw-LBk"/>
+                        <outlet property="lblPrice" destination="3ww-9p-qyV" id="2Au-sM-mWH"/>
+                        <outlet property="lblProductName" destination="fBB-Js-7k9" id="aeP-Y8-cku"/>
+                        <outlet property="lblS" destination="XfO-P6-EzE" id="ZNU-fI-vdg"/>
+                        <outlet property="lblXL" destination="8jg-RY-W8k" id="fxQ-rY-spQ"/>
+                        <outlet property="lblXS" destination="eBg-0q-y8d" id="uvY-OB-vSp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ysZ-ez-6HL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Fu0-FK-EAt" userLabel="Exit" sceneMemberID="exit"/>
