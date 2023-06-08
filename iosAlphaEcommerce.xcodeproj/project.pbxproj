@@ -10,6 +10,7 @@
 		4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */; };
 		4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */; };
 		ABAC185D2A31D98B00B92BBA /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */; };
+		AD2742AE2A321DE300053A89 /* womenCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2742AD2A321DE300053A89 /* womenCollectionViewCell2.swift */; };
 		AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */; };
 		AD3EB30E2A31B19F00D2A24F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */; };
 		AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30F2A31B19F00D2A24F /* ViewController.swift */; };
@@ -17,7 +18,6 @@
 		AD3EB3152A31B1A100D2A24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EB3142A31B1A100D2A24F /* Assets.xcassets */; };
 		AD3EB3182A31B1A100D2A24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3EB3162A31B1A100D2A24F /* LaunchScreen.storyboard */; };
 		AD3EB3202A31D17B00D2A24F /* womenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */; };
-		AD3EB3282A3209B200D2A24F /* womenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB3272A3209B200D2A24F /* womenCollectionViewCell.swift */; };
 		AD5E40ED2A3213A20079A9F7 /* Item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E40EC2A3213A20079A9F7 /* Item1.swift */; };
 		CB3A26B22A31B66000A92405 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B12A31B66000A92405 /* Item.swift */; };
 		CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B32A31D0B800A92405 /* menViewController.swift */; };
@@ -28,6 +28,7 @@
 		4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.otf"; sourceTree = "<group>"; };
 		4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.ttf"; sourceTree = "<group>"; };
 		ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		AD2742AD2A321DE300053A89 /* womenCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenCollectionViewCell2.swift; sourceTree = "<group>"; };
 		AD3EB3082A31B19F00D2A24F /* iosAlphaEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAlphaEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		AD3EB3172A31B1A100D2A24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3EB3192A31B1A100D2A24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenViewController.swift; sourceTree = "<group>"; };
-		AD3EB3272A3209B200D2A24F /* womenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = womenCollectionViewCell.swift; path = "../../../.Trash/iosAlphaEcommerce 14.51.01/iosAlphaEcommerce/womenCollectionViewCell.swift"; sourceTree = "<group>"; };
 		AD5E40EC2A3213A20079A9F7 /* Item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item1.swift; sourceTree = "<group>"; };
 		CB3A26B12A31B66000A92405 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB3A26B32A31D0B800A92405 /* menViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menViewController.swift; sourceTree = "<group>"; };
@@ -89,8 +89,8 @@
 				AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */,
 				AD3EB30F2A31B19F00D2A24F /* ViewController.swift */,
 				AD3EB3112A31B19F00D2A24F /* Main.storyboard */,
+				AD2742AD2A321DE300053A89 /* womenCollectionViewCell2.swift */,
 				AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */,
-				AD3EB3272A3209B200D2A24F /* womenCollectionViewCell.swift */,
 				AD3EB3142A31B1A100D2A24F /* Assets.xcassets */,
 				AD3EB3162A31B1A100D2A24F /* LaunchScreen.storyboard */,
 				AD3EB3192A31B1A100D2A24F /* Info.plist */,
@@ -185,8 +185,8 @@
 			files = (
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
 				CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */,
+				AD2742AE2A321DE300053A89 /* womenCollectionViewCell2.swift in Sources */,
 				AD5E40ED2A3213A20079A9F7 /* Item1.swift in Sources */,
-				AD3EB3282A3209B200D2A24F /* womenCollectionViewCell.swift in Sources */,
 				AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */,
 				AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */,
 				CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */,

@@ -87,7 +87,7 @@ extension womenViewController: UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "womenCollectionViewCell", for: indexPath) as! womenCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "womenCollectionViewCell2", for: indexPath) as! womenCollectionViewCell2
         cell.setup1(with: searchProduct[indexPath.row])
         
         //cell.ProductNameLbl.text = items
