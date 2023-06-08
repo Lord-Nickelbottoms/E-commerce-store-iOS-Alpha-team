@@ -14,6 +14,7 @@
 		AD3EB3152A31B1A100D2A24F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3EB3142A31B1A100D2A24F /* Assets.xcassets */; };
 		AD3EB3182A31B1A100D2A24F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3EB3162A31B1A100D2A24F /* LaunchScreen.storyboard */; };
 		CB3A26B22A31B66000A92405 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B12A31B66000A92405 /* Item.swift */; };
+		CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B32A31D0B800A92405 /* menViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AD3EB3172A31B1A100D2A24F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3EB3192A31B1A100D2A24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3A26B12A31B66000A92405 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CB3A26B32A31D0B800A92405 /* menViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AD3EB3142A31B1A100D2A24F /* Assets.xcassets */,
 				AD3EB3162A31B1A100D2A24F /* LaunchScreen.storyboard */,
 				AD3EB3192A31B1A100D2A24F /* Info.plist */,
+				CB3A26B32A31D0B800A92405 /* menViewController.swift */,
 			);
 			path = iosAlphaEcommerce;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
 				AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */,
 				AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */,
+				CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */,
 				AD3EB30E2A31B19F00D2A24F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
