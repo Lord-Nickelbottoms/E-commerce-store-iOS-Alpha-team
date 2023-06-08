@@ -100,13 +100,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVl-aj-vun">
-                                <rect key="frame" x="6" y="103" width="381" height="21"/>
+                                <rect key="frame" x="6" y="59" width="381" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueShirt" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-NU-0tA">
-                                <rect key="frame" x="124" y="134" width="145" height="200"/>
+                                <rect key="frame" x="124" y="90" width="145" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="145" id="WQc-od-IDd"/>
                                     <constraint firstAttribute="height" constant="200" id="p6E-lu-O9I"/>
@@ -134,7 +134,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-Ot-ibz">
-                                <rect key="frame" x="16" y="344" width="350" height="116"/>
+                                <rect key="frame" x="16" y="300" width="350" height="116"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBB-Js-7k9">
                                         <rect key="frame" x="8" y="8" width="134.66666666666666" height="27"/>
