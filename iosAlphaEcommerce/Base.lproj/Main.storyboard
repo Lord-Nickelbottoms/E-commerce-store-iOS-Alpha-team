@@ -78,21 +78,10 @@
         <!--WOMEN-->
         <scene sceneID="fM6-V5-EkF">
             <objects>
-                <viewController id="uYM-rM-ln9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="womenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uYM-rM-ln9" customClass="womenViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DKj-AE-RRO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efH-1M-q8A">
-                                <rect key="frame" x="159" y="641" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <segue destination="txN-zz-uYu" kind="show" id="U5n-ZY-BwC"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iy0-a4-m1z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
