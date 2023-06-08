@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="2799.2366412213742" y="-2.1126760563380285"/>
         </scene>
-        <!--Item 3-->
+        <!--Account-->
         <scene sceneID="zoe-zB-9jv">
             <objects>
                 <viewController id="pLo-ni-cqs" sceneMemberID="viewController">
@@ -69,7 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="hrA-Ps-Z1f"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" id="zLt-qo-Xsl"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.crop.circle" catalog="system" id="zLt-qo-Xsl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTa-VG-UpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,11 +184,11 @@
             </objects>
             <point key="canvasLocation" x="945.80152671755718" y="-2.1126760563380285"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="rgH-t5-gL7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dRx-Wl-YNZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Hvl-nC-cGg"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Hvl-nC-cGg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="8zn-l6-DoQ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -205,6 +205,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
