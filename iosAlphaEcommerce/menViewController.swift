@@ -10,7 +10,14 @@ import UIKit
 class menViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var searchProduct = [Item]()
+    
+    var item = [Products]()
+    
+    var product: Products?
+    
+    var searchProduct = [Products]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,14 +25,42 @@ class menViewController: UIViewController {
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         //self.collectionView.reloadData()
-        searchProduct = items
+//        searchProduct = product
+        
+        fetchApiData { [self] in
+            print("Success: Men Controller")
+            self.collectionView.reloadData()
+        }
+        
     }
+    
+    
+    func fetchApiData(completed: @escaping() -> ()){
+        let url = URL(string: "https://fakestoreapi.com/products")
+        URLSession.shared.dataTask(with: url!) {data, result, error in
+            
+            if error == nil{
+                do{
+                    self.item = try JSONDecoder().decode([Products].self, from: data!)
+                }
+                catch{
+                    print("Error fetching data from API.")
+                }
+                
+                DispatchQueue.main.async {
+                    completed()
+                }
+            }
+        }.resume()
+    }
+    
+    
     @IBAction func btnPants(_ sender: UIButton) {
         searchProduct = []
         for word in items{
             if word.category == "Pants"
             {
-                searchProduct.append(word)
+//                searchProduct.append(word)
 
             }
         }
@@ -36,7 +71,7 @@ class menViewController: UIViewController {
         for word in items{
             if word.category == "Shirts"
             {
-                searchProduct.append(word)
+//                searchProduct.append(word)
 
             }
         }
@@ -48,7 +83,7 @@ class menViewController: UIViewController {
         for word in items{
             if word.category == "Tshirts"
             {
-                searchProduct.append(word)
+//                searchProduct.append(word)
 
             }
         }
@@ -59,7 +94,7 @@ class menViewController: UIViewController {
         for word in items{
             if word.category == "Jackets"
             {
-                searchProduct.append(word)
+//                searchProduct.append(word)
 
             }
         }
@@ -70,7 +105,7 @@ class menViewController: UIViewController {
         for word in items{
             if word.category == "Pants" || word.category == "Jackets" || word.category == "Shirts" || word.category == "Shorts" || word.category == "TShirts"
             {
-                searchProduct.append(word)
+//                searchProduct.append(word)
 
             }
         }
@@ -79,22 +114,41 @@ class menViewController: UIViewController {
 }
 extension menViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return searchProduct.count
+        return item.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenCollectionViewCell", for: indexPath) as! MenCollectionViewCell
-        cell.setup(with: searchProduct[indexPath.row])
+        cell.setup(with: item[indexPath.row])
         
-        //cell.ProductNameLbl.text = items
-        cell.reloadInputViews()
-        cell.layer.borderColor = UIColor.white.cgColor
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 10
+        let imageURL = item[indexPath.row].image as? String
+        
+        if let url = URL(string: imageURL!){
+            
+            let task = URLSession.shared.dataTask(with: url){ (data, response, error) in
+                if let data = data{
+                    let image = UIImage(data: data)
+                    
+                    DispatchQueue.main.async {
+                        cell.productImageView.image = image
+                        cell.setNeedsLayout()
+                    }
+                }
+            }.resume()
+            cell.lblName.text = item[indexPath.row].title
+            cell.lblPrice.text = "\(item[indexPath.row].price)"
+            cell.productImageView.image = UIImage(named: item[indexPath.row].image)
+            
+            cell.reloadInputViews()
+            cell.layer.borderColor = UIColor.white.cgColor
+            cell.layer.borderWidth = 1
+            cell.layer.cornerRadius = 10
+            
+            //return cell
+            //cell.titleTextLabel.text = articleVM.title
+            //cell.descriptionTextLabel.text = articleVM.description
+        }
         return cell
-        
-        //cell.titleTextLabel.text = articleVM.title
-        //cell.descriptionTextLabel.text = articleVM.description
     }
 }
 
@@ -110,12 +164,12 @@ extension menViewController: UISearchBarDelegate{
         searchProduct = []
         if searchText == ""
         {
-            searchProduct = items
+//            searchProduct = items1
         }
-        for word in items{
+        for word in items1{
             if word.name.lowercased().contains(searchText.lowercased())
             {
-                searchProduct.append(word)
+//                searchProduct.append(word)
                 self.collectionView.reloadData()
             }
         }
@@ -133,17 +187,16 @@ extension menViewController: UICollectionViewDelegate{
 //
 //        defaults.set(count, forKey: "Countt")
         
-        vc?.name = searchProduct[indexPath.row].name
+        vc?.name = searchProduct[indexPath.row].title
         vc?.category = searchProduct[indexPath.row].category
-        vc?.colour = searchProduct[indexPath.row].colour
+//        vc?.colour = searchProduct[indexPath.row].colour
         vc?.price = searchProduct[indexPath.row].price
-        vc?.gender = searchProduct[indexPath.row].gender
-        vc?.imgname = searchProduct[indexPath.row].image
-        vc?.size = searchProduct[indexPath.row].size
+//        vc?.gender = searchProduct[indexPath.row].gender
+        vc?.imgname = UIImage(named: searchProduct[indexPath.row].image)
+//        vc?.size = searchProduct[indexPath.row].size
 //        vc?.count = count
             self.navigationController?.pushViewController(vc!, animated: true)
         
         print(items[indexPath.row].category)
     }
 }
-

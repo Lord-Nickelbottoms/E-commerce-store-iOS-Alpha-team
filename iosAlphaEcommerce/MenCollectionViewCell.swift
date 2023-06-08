@@ -11,10 +11,14 @@ class MenCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productImageView: UIImageView!
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblPrice: UILabel!
     
-    func setup(with item: Item)
+    
+    
+    func setup(with product: Products)
     {
-        productImageView.image = item.image
-        lblName.text = item.name
+        productImageView.image = UIImage(named: product.image)
+        lblName.text = product.title
+        lblPrice.text = "R " + String(product.price)
     }
 }

@@ -24,7 +24,7 @@ struct Item1{
 }
 
 let items1: [Item1] = [
-    Item1(gender: "Wemen", category: "Jackets", name:"Nike Puffer", size: "S", price: 250.99, colour: "Black", image: #imageLiteral(resourceName: "pink jacket")),
+    Item1(gender: "Women", category: "Jackets", name:"Nike Puffer", size: "S", price: 250.99, colour: "Black", image: #imageLiteral(resourceName: "pink jacket")),
     
     Item1(gender: "Women", category: "Pants", name: "blue jean", size: "M", price: 250.99, colour: "Grey", image: #imageLiteral(resourceName: "blueTop")),
     

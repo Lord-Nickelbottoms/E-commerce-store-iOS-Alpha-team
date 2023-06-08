@@ -7,18 +7,18 @@
 
 import UIKit
 
-class womenCollectionViewCell2: UICollectionViewCell {
+class womenCollectionViewCell: UICollectionViewCell {
     
         @IBOutlet weak var productImageView: UIImageView!
         
         @IBOutlet weak var priceLbl: UILabel!
         @IBOutlet weak var namelbl: UILabel!
         
-        func setup1(with item1: Item1)
+        func setup(with product: Products)
         {
-            namelbl.text = item1.name
-            priceLbl.text = "R " + String(item1.price)
-            productImageView.image = item1.image
+            namelbl.text = product.title
+            priceLbl.text = "R " + String(product.price)
+            productImageView.image = UIImage(named: product.image)
         }
     
 

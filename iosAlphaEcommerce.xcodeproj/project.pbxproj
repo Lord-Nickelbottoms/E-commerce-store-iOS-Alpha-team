@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */; };
 		4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */; };
+		7030115C2A3257D100CAD1DA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7030115B2A3257D100CAD1DA /* Products.swift */; };
 		ABAC185D2A31D98B00B92BBA /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */; };
-		AD2742AE2A321DE300053A89 /* womenCollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2742AD2A321DE300053A89 /* womenCollectionViewCell2.swift */; };
+		AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */; };
 		AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */; };
 		AD3EB30E2A31B19F00D2A24F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */; };
 		AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30F2A31B19F00D2A24F /* ViewController.swift */; };
@@ -27,8 +28,9 @@
 /* Begin PBXFileReference section */
 		4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.otf"; sourceTree = "<group>"; };
 		4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.ttf"; sourceTree = "<group>"; };
+		7030115B2A3257D100CAD1DA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
-		AD2742AD2A321DE300053A89 /* womenCollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenCollectionViewCell2.swift; sourceTree = "<group>"; };
+		AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD3EB3082A31B19F00D2A24F /* iosAlphaEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAlphaEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 				AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */,
 				AD3EB30F2A31B19F00D2A24F /* ViewController.swift */,
 				AD3EB3112A31B19F00D2A24F /* Main.storyboard */,
-				AD2742AD2A321DE300053A89 /* womenCollectionViewCell2.swift */,
+				AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */,
 				AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */,
 				AD3EB3142A31B1A100D2A24F /* Assets.xcassets */,
 				AD3EB3162A31B1A100D2A24F /* LaunchScreen.storyboard */,
@@ -106,6 +108,7 @@
 				CB3A26B12A31B66000A92405 /* Item.swift */,
 				ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */,
 				AD5E40EC2A3213A20079A9F7 /* Item1.swift */,
+				7030115B2A3257D100CAD1DA /* Products.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,8 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
+				7030115C2A3257D100CAD1DA /* Products.swift in Sources */,
 				CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */,
-				AD2742AE2A321DE300053A89 /* womenCollectionViewCell2.swift in Sources */,
+				AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */,
 				AD5E40ED2A3213A20079A9F7 /* Item1.swift in Sources */,
 				AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */,
 				AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */,
