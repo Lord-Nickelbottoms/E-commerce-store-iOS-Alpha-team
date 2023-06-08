@@ -17,6 +17,7 @@
 		AD3EB3202A31D17B00D2A24F /* womenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */; };
 		CB3A26B22A31B66000A92405 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B12A31B66000A92405 /* Item.swift */; };
 		CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B32A31D0B800A92405 /* menViewController.swift */; };
+		CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3A26B52A31E46100A92405 /* MenCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenViewController.swift; sourceTree = "<group>"; };
 		CB3A26B12A31B66000A92405 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CB3A26B32A31D0B800A92405 /* menViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menViewController.swift; sourceTree = "<group>"; };
+		CB3A26B52A31E46100A92405 /* MenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				AD3EB3162A31B1A100D2A24F /* LaunchScreen.storyboard */,
 				AD3EB3192A31B1A100D2A24F /* Info.plist */,
 				CB3A26B32A31D0B800A92405 /* menViewController.swift */,
+				CB3A26B52A31E46100A92405 /* MenCollectionViewCell.swift */,
 			);
 			path = iosAlphaEcommerce;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
+				CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */,
 				AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */,
 				AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */,
 				CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */,
