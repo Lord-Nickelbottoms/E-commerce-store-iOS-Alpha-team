@@ -75,7 +75,7 @@
             </objects>
             <point key="canvasLocation" x="106" y="873"/>
         </scene>
-        <!--View Controller-->
+        <!--WOMEN-->
         <scene sceneID="fM6-V5-EkF">
             <objects>
                 <viewController id="uYM-rM-ln9" sceneMemberID="viewController">
@@ -96,7 +96,7 @@
                         <viewLayoutGuide key="safeArea" id="iy0-a4-m1z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UuY-Hf-sFh"/>
+                    <navigationItem key="navigationItem" title="WOMEN" id="UuY-Hf-sFh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKB-wD-AYj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
