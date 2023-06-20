@@ -36,7 +36,7 @@ var count = 0
     }
     
     func fetchApiData(completed: @escaping() -> ()){
-        let url = URL(string: "https://fakestoreapi.com/products")
+        let url = URL(string: "https://fakestoreapi.com/products/category/women's%20clothing")
         URLSession.shared.dataTask(with: url!) {data, result, error in
             
             if error == nil{
@@ -161,7 +161,7 @@ extension womenViewController: UICollectionViewDataSource{
             
 //            cell.productImageView.downloaded(from: "https://fakestoreapi.com/products" + (product?.image)!)
             cell.namelbl.text = item[indexPath.row].title
-            cell.priceLbl.text = "\(item[indexPath.row].price)"
+            cell.priceLbl.text = "R " + "\(item[indexPath.row].price)"
             cell.productImageView.image = UIImage(named: item[indexPath.row].image)
             
             cell.reloadInputViews()
@@ -219,7 +219,7 @@ extension womenViewController: UICollectionViewDataSource{
             //        vc?.size = item[indexPath.row].size
             //        vc?.count = count
             self.navigationController?.pushViewController(vc!, animated: true)
-            print(items[indexPath.row].category)
+            print(item[indexPath.row].category)
         }
     }
     

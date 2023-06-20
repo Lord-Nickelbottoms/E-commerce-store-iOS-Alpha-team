@@ -36,7 +36,7 @@ class menViewController: UIViewController {
     
     
     func fetchApiData(completed: @escaping() -> ()){
-        let url = URL(string: "https://fakestoreapi.com/products")
+        let url = URL(string: "https://fakestoreapi.com/products/category/men's%20clothing")
         URLSession.shared.dataTask(with: url!) {data, result, error in
             
             if error == nil{
@@ -136,7 +136,7 @@ extension menViewController: UICollectionViewDataSource{
                 }
             }.resume()
             cell.lblName.text = item[indexPath.row].title
-            cell.lblPrice.text = "\(item[indexPath.row].price)"
+            cell.lblPrice.text = "R " + "\(item[indexPath.row].price)"
             cell.productImageView.image = UIImage(named: item[indexPath.row].image)
             
             cell.reloadInputViews()
@@ -187,16 +187,16 @@ extension menViewController: UICollectionViewDelegate{
 //
 //        defaults.set(count, forKey: "Countt")
         
-        vc?.name = searchProduct[indexPath.row].title
-        vc?.category = searchProduct[indexPath.row].category
+        vc?.name = item[indexPath.row].title
+        vc?.category = item[indexPath.row].category
 //        vc?.colour = searchProduct[indexPath.row].colour
-        vc?.price = searchProduct[indexPath.row].price
+        vc?.price = item[indexPath.row].price
 //        vc?.gender = searchProduct[indexPath.row].gender
-        vc?.imgname = UIImage(named: searchProduct[indexPath.row].image)
+        vc?.imgname = UIImage(named: item[indexPath.row].image)
 //        vc?.size = searchProduct[indexPath.row].size
 //        vc?.count = count
             self.navigationController?.pushViewController(vc!, animated: true)
         
-        print(items[indexPath.row].category)
+        print(item[indexPath.row].category)
     }
 }
