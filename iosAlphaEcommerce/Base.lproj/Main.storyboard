@@ -822,10 +822,10 @@
             </objects>
             <point key="canvasLocation" x="234.35114503816794" y="-2.1126760563380285"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="KGn-rp-2iI">
             <objects>
-                <viewController id="I25-w4-sdo" sceneMemberID="viewController">
+                <viewController id="I25-w4-sdo" customClass="LoginViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3mf-Bk-MVI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -917,6 +917,9 @@
                                     <fontDescription key="titleFontDescription" name="Kodchasan-Bold" family="Kodchasan" pointSize="20"/>
                                     <color key="baseBackgroundColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="I25-w4-sdo" eventType="touchUpInside" id="8rZ-5Q-58v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uno-6T-esC"/>
@@ -934,15 +937,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fqZ-hP-A0p"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="WIi-5c-W9e" id="RbI-pk-nSf"/>
+                        <outlet property="passwordTextField" destination="T9L-eP-PI0" id="usJ-Vq-twF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="84n-b5-sVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="471" y="1582"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="Wgh-ZF-qeq">
             <objects>
-                <viewController id="4tg-0n-OAu" sceneMemberID="viewController">
+                <viewController id="4tg-0n-OAu" customClass="RegisterViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Euy-p0-8bS">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1058,6 +1065,9 @@
                                                     <fontDescription key="titleFontDescription" name="Kodchasan-Bold" family="Kodchasan" pointSize="20"/>
                                                     <color key="baseBackgroundColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="registerButton:" destination="4tg-0n-OAu" eventType="touchUpInside" id="DQy-Vp-tHg"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1181,6 +1191,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HWd-Ki-c0i"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="Av1-Qx-7QA" id="oMa-Xz-jQH"/>
+                        <outlet property="confirmPasswordTextField" destination="3va-4x-hsB" id="g0Q-At-D4m"/>
+                        <outlet property="contactTextField" destination="I2B-LE-pUP" id="a9i-4b-EvL"/>
+                        <outlet property="emailTextField" destination="kpt-8C-BIR" id="RUQ-bw-Jph"/>
+                        <outlet property="firstNameTextField" destination="YgJ-Uw-9xH" id="Jjh-W4-t5u"/>
+                        <outlet property="lastNameTextField" destination="Pr0-3J-fUl" id="fK6-aD-qTj"/>
+                        <outlet property="passwordTextField" destination="SrM-tA-Dnz" id="q9W-xo-X2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FDH-JZ-jQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
