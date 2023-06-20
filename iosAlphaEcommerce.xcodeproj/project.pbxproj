@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */; };
 		4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */; };
+		4BFAE79B2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE78F2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf */; };
+		4BFAE79C2A41B41A00750AC3 /* Kodchasan-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7902A41B41A00750AC3 /* Kodchasan-Light.ttf */; };
+		4BFAE79D2A41B41A00750AC3 /* Kodchasan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7912A41B41A00750AC3 /* Kodchasan-Regular.ttf */; };
+		4BFAE79E2A41B41A00750AC3 /* Kodchasan-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7922A41B41A00750AC3 /* Kodchasan-SemiBold.ttf */; };
+		4BFAE79F2A41B41A00750AC3 /* Kodchasan-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7932A41B41A00750AC3 /* Kodchasan-Bold.ttf */; };
+		4BFAE7A02A41B41A00750AC3 /* Kodchasan-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7942A41B41A00750AC3 /* Kodchasan-ExtraLight.ttf */; };
+		4BFAE7A12A41B41A00750AC3 /* Kodchasan-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7952A41B41A00750AC3 /* Kodchasan-BoldItalic.ttf */; };
+		4BFAE7A22A41B41A00750AC3 /* Kodchasan-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7962A41B41A00750AC3 /* Kodchasan-MediumItalic.ttf */; };
+		4BFAE7A32A41B41A00750AC3 /* Kodchasan-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7972A41B41A00750AC3 /* Kodchasan-Italic.ttf */; };
+		4BFAE7A42A41B41A00750AC3 /* Kodchasan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7982A41B41A00750AC3 /* Kodchasan-Medium.ttf */; };
+		4BFAE7A52A41B41A00750AC3 /* Kodchasan-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE7992A41B41A00750AC3 /* Kodchasan-LightItalic.ttf */; };
+		4BFAE7A62A41B41A00750AC3 /* Kodchasan-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE79A2A41B41A00750AC3 /* Kodchasan-SemiBoldItalic.ttf */; };
 		7030115C2A3257D100CAD1DA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7030115B2A3257D100CAD1DA /* Products.swift */; };
 		ABAC185D2A31D98B00B92BBA /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */; };
 		AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */; };
@@ -28,6 +40,18 @@
 /* Begin PBXFileReference section */
 		4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.otf"; sourceTree = "<group>"; };
 		4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.ttf"; sourceTree = "<group>"; };
+		4BFAE78F2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		4BFAE7902A41B41A00750AC3 /* Kodchasan-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-Light.ttf"; sourceTree = "<group>"; };
+		4BFAE7912A41B41A00750AC3 /* Kodchasan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-Regular.ttf"; sourceTree = "<group>"; };
+		4BFAE7922A41B41A00750AC3 /* Kodchasan-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-SemiBold.ttf"; sourceTree = "<group>"; };
+		4BFAE7932A41B41A00750AC3 /* Kodchasan-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-Bold.ttf"; sourceTree = "<group>"; };
+		4BFAE7942A41B41A00750AC3 /* Kodchasan-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4BFAE7952A41B41A00750AC3 /* Kodchasan-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4BFAE7962A41B41A00750AC3 /* Kodchasan-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-MediumItalic.ttf"; sourceTree = "<group>"; };
+		4BFAE7972A41B41A00750AC3 /* Kodchasan-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-Italic.ttf"; sourceTree = "<group>"; };
+		4BFAE7982A41B41A00750AC3 /* Kodchasan-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-Medium.ttf"; sourceTree = "<group>"; };
+		4BFAE7992A41B41A00750AC3 /* Kodchasan-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-LightItalic.ttf"; sourceTree = "<group>"; };
+		4BFAE79A2A41B41A00750AC3 /* Kodchasan-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		7030115B2A3257D100CAD1DA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
 		AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -60,10 +84,38 @@
 		4BBDD86C2A31E6D300B4B563 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4BFAE7A72A41B42200750AC3 /* Kodchasan */,
+				4BFAE78E2A41B3F900750AC3 /* Ostrich Sans Medium */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4BFAE78E2A41B3F900750AC3 /* Ostrich Sans Medium */ = {
+			isa = PBXGroup;
+			children = (
 				4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */,
 				4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */,
 			);
-			path = Fonts;
+			path = "Ostrich Sans Medium";
+			sourceTree = "<group>";
+		};
+		4BFAE7A72A41B42200750AC3 /* Kodchasan */ = {
+			isa = PBXGroup;
+			children = (
+				4BFAE7932A41B41A00750AC3 /* Kodchasan-Bold.ttf */,
+				4BFAE7952A41B41A00750AC3 /* Kodchasan-BoldItalic.ttf */,
+				4BFAE7942A41B41A00750AC3 /* Kodchasan-ExtraLight.ttf */,
+				4BFAE78F2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf */,
+				4BFAE7972A41B41A00750AC3 /* Kodchasan-Italic.ttf */,
+				4BFAE7902A41B41A00750AC3 /* Kodchasan-Light.ttf */,
+				4BFAE7992A41B41A00750AC3 /* Kodchasan-LightItalic.ttf */,
+				4BFAE7982A41B41A00750AC3 /* Kodchasan-Medium.ttf */,
+				4BFAE7962A41B41A00750AC3 /* Kodchasan-MediumItalic.ttf */,
+				4BFAE7912A41B41A00750AC3 /* Kodchasan-Regular.ttf */,
+				4BFAE7922A41B41A00750AC3 /* Kodchasan-SemiBold.ttf */,
+				4BFAE79A2A41B41A00750AC3 /* Kodchasan-SemiBoldItalic.ttf */,
+			);
+			path = Kodchasan;
 			sourceTree = "<group>";
 		};
 		AD3EB2FF2A31B19F00D2A24F = {
@@ -172,10 +224,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3EB3182A31B1A100D2A24F /* LaunchScreen.storyboard in Resources */,
+				4BFAE7A22A41B41A00750AC3 /* Kodchasan-MediumItalic.ttf in Resources */,
+				4BFAE7A62A41B41A00750AC3 /* Kodchasan-SemiBoldItalic.ttf in Resources */,
 				AD3EB3152A31B1A100D2A24F /* Assets.xcassets in Resources */,
+				4BFAE79C2A41B41A00750AC3 /* Kodchasan-Light.ttf in Resources */,
 				4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */,
+				4BFAE7A12A41B41A00750AC3 /* Kodchasan-BoldItalic.ttf in Resources */,
+				4BFAE79D2A41B41A00750AC3 /* Kodchasan-Regular.ttf in Resources */,
+				4BFAE7A32A41B41A00750AC3 /* Kodchasan-Italic.ttf in Resources */,
 				AD3EB3132A31B19F00D2A24F /* Main.storyboard in Resources */,
+				4BFAE7A42A41B41A00750AC3 /* Kodchasan-Medium.ttf in Resources */,
+				4BFAE7A02A41B41A00750AC3 /* Kodchasan-ExtraLight.ttf in Resources */,
 				4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */,
+				4BFAE7A52A41B41A00750AC3 /* Kodchasan-LightItalic.ttf in Resources */,
+				4BFAE79E2A41B41A00750AC3 /* Kodchasan-SemiBold.ttf in Resources */,
+				4BFAE79F2A41B41A00750AC3 /* Kodchasan-Bold.ttf in Resources */,
+				4BFAE79B2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

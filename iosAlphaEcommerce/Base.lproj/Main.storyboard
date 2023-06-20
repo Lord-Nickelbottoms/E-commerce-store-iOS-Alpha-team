@@ -12,7 +12,7 @@
         <array key="Kodchasan-Bold.ttf">
             <string>Kodchasan-Bold</string>
         </array>
-        <array key="ostrich-sans-medium.ttf">
+        <array key="ostrich-sans-medium.otf">
             <string>OstrichSans-Medium</string>
         </array>
     </customFonts>
@@ -29,9 +29,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOy-EM-8fm">
-                                <rect key="frame" x="16" y="783" width="361" height="35"/>
+                                <rect key="frame" x="16" y="778" width="361" height="40"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Get Started→">
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Started→">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="Kodchasan-Bold"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                     <color key="baseBackgroundColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
