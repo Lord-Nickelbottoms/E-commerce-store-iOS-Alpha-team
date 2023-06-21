@@ -20,6 +20,9 @@ class LoginViewController: UIViewController {
     
 
 	@IBAction func loginButton(_ sender: UIButton) {
+		
+		let webService = WebService()
+		webService.loginUser(email: emailTextField.text!, password: passwordTextField.text!)
 	}
     
 

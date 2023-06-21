@@ -17,6 +17,8 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+	
+	let webService = WebService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,6 +92,8 @@ class RegisterViewController: UIViewController {
         {
             addAlert(message: "Successfully registered", title: "Success!")
         }
+		webService.registerUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, email: emailTextField.text!, contact: contactTextField.text!, address: addressTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
+		
     }
     
     func addAlert(message: String, title: String) {
@@ -125,6 +129,5 @@ class RegisterViewController: UIViewController {
             let predicate = NSPredicate(format:"SELF MATCHES %@", RegEx)
             return predicate.evaluate(with: enteredAddress)
         }
+	
 }
-
-

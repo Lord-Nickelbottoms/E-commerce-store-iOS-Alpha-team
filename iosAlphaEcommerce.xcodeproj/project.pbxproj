@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BB259872A42D4B0009A981C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB259862A42D4B0009A981C /* WebService.swift */; };
 		4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */; };
 		4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */; };
 		4BFAE79B2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BFAE78F2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BB259862A42D4B0009A981C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.otf"; sourceTree = "<group>"; };
 		4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.ttf"; sourceTree = "<group>"; };
 		4BFAE78F2A41B41A00750AC3 /* Kodchasan-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kodchasan-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BB259852A42D48D009A981C /* Web Service */ = {
+			isa = PBXGroup;
+			children = (
+				4BB259862A42D4B0009A981C /* WebService.swift */,
+			);
+			path = "Web Service";
+			sourceTree = "<group>";
+		};
 		4BBDD86C2A31E6D300B4B563 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		AD3EB30A2A31B19F00D2A24F /* iosAlphaEcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				4BB259852A42D48D009A981C /* Web Service */,
 				4BBDD86C2A31E6D300B4B563 /* Fonts */,
 				CB3A26B02A31B64700A92405 /* Model */,
 				AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */,
@@ -258,6 +269,7 @@
 			files = (
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
 				7030115C2A3257D100CAD1DA /* Products.swift in Sources */,
+				4BB259872A42D4B0009A981C /* WebService.swift in Sources */,
 				CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */,
 				4BFAE7A92A41B6B300750AC3 /* RegisterViewController.swift in Sources */,
 				AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */,
