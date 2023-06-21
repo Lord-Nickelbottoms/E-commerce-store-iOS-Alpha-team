@@ -15,11 +15,7 @@ var count = 0
     
     var item = [Products]()
     
-    var product: Products?
-    
     var searchProduct = [Products]()
-    
-//    var product: [Products]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +23,10 @@ var count = 0
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
-//
-//        searchProduct = items1
+        
         fetchApiData { [self] in
             print("Success: Women Controller")
+            searchProduct = item
             collectionView.reloadData()
         }
     }
@@ -113,28 +109,10 @@ var count = 0
         self.collectionView.reloadData()
     }
     
-    
-//    func fetchApiData(completed: @escaping () -> ()) {
-//
-//        let url = URL(string: "https://fakestoreapi.com/products")
-//        URLSession.shared.dataTask(with: url!){ data, response, error
-//            if error == nil{
-//                self.searchProduct = JSONDecoder().decode([Products], from: data!)
-//
-//                DispatchQueue.main.async {
-//                    completed()
-//                }
-//            }
-//            catch{
-//                print("Error fetching data")
-//            }
-//        }
-//    }
-    
 }
 extension womenViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return item.count
+        return searchProduct.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -142,7 +120,7 @@ extension womenViewController: UICollectionViewDataSource{
         cell.setup(with: item[indexPath.row])
         
         
-        let imageURL = item[indexPath.row].image as? String
+        let imageURL = searchProduct[indexPath.row].image as? String
         
         if let url = URL(string: imageURL!) {
             // Create a URLSessionDataTask to download the image data
@@ -159,18 +137,14 @@ extension womenViewController: UICollectionViewDataSource{
                 }
             }.resume()
             
-//            cell.productImageView.downloaded(from: "https://fakestoreapi.com/products" + (product?.image)!)
-            cell.namelbl.text = item[indexPath.row].title
-            cell.priceLbl.text = "R " + "\(item[indexPath.row].price)"
-            cell.productImageView.image = UIImage(named: item[indexPath.row].image)
+            cell.namelbl.text = searchProduct[indexPath.row].title
+            cell.priceLbl.text = "R " + "\(searchProduct[indexPath.row].price)"
+            cell.productImageView.image = UIImage(named: searchProduct[indexPath.row].image)
             
             cell.reloadInputViews()
             cell.layer.borderColor = UIColor.black.cgColor
             cell.layer.borderWidth = 1
             cell.layer.cornerRadius = 10
-            
-            //cell.titleTextLabel.text = articleVM.title
-            //cell.descriptionTextLabel.text = articleVM.description
         }
         return cell
     }
@@ -180,20 +154,19 @@ extension womenViewController: UICollectionViewDataSource{
             return CGSize(width: 190, height: 260)
         }
     }
-    
     extension womenViewController: UISearchBarDelegate{
         
         func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
             searchProduct = []
             if searchText == ""
             {
-//                            searchProduct = items1
+                    searchProduct = item
             }
-            for word in items1{
-                if word.name.lowercased().contains(searchText.lowercased())
+            for word in item{
+                if word.title.lowercased().contains(searchText.lowercased())
                 {
-                    //                searchProduct.append(word)
-                    self.collectionView.reloadData()
+                    searchProduct.append(word)
+                    //self.collectionView.reloadData()
                 }
             }
             self.collectionView.reloadData()
@@ -210,12 +183,12 @@ extension womenViewController: UICollectionViewDataSource{
             //
             //        defaults.set(count, forKey: "Countt")
             
-            vc?.name = item[indexPath.row].title
-            vc?.category = item[indexPath.row].category
+            vc?.name = searchProduct[indexPath.row].title
+            vc?.category = searchProduct[indexPath.row].category
             //        vc?.colour = item[indexPath.row].colour
-            vc?.price = item[indexPath.row].price
+            vc?.price = searchProduct[indexPath.row].price
             //        vc?.gender = item[indexPath.row].gender
-            vc?.imgname = UIImage(named: item[indexPath.row].image)
+            vc?.imgname = UIImage(named: searchProduct[indexPath.row].image)
             //        vc?.size = item[indexPath.row].size
             //        vc?.count = count
             self.navigationController?.pushViewController(vc!, animated: true)
