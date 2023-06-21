@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aP6-HZ-MuN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I25-w4-sdo">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <array key="Kodchasan-Bold.ttf">
             <string>Kodchasan-Bold</string>
         </array>
-        <array key="ostrich-sans-medium.otf">
+        <array key="ostrich-sans-medium.ttf">
             <string>OstrichSans-Medium</string>
         </array>
     </customFonts>
@@ -964,7 +964,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j60-MG-ie6">
-                                <rect key="frame" x="130" y="69" width="133.33333333333337" height="63.666666666666657"/>
+                                <rect key="frame" x="98.333333333333329" y="69" width="196.33333333333337" height="62"/>
                                 <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="53"/>
                                 <color key="textColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1062,13 +1062,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By registering, your agree to our Terms and Conditions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-ao-BX8">
-                                                <rect key="frame" x="20" y="521" width="361" height="17"/>
+                                                <rect key="frame" x="20" y="521" width="361" height="15.333333333333371"/>
                                                 <fontDescription key="fontDescription" name="Kodchasan-Bold" family="Kodchasan" pointSize="13"/>
                                                 <color key="textColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygT-BS-nov">
-                                                <rect key="frame" x="20" y="558" width="361" height="40"/>
+                                                <rect key="frame" x="20" y="556.33333333333337" width="361" height="37.333333333333371"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Register">
                                                     <fontDescription key="titleFontDescription" name="Kodchasan-Bold" family="Kodchasan" pointSize="20"/>
@@ -1152,7 +1152,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="VVQ-94-KTs"/>
                             </scrollView>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-eC-af7">
-                                <rect key="frame" x="121" y="144.66666666666663" width="151" height="239.33333333333337"/>
+                                <rect key="frame" x="121" y="143" width="151" height="241"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tote-bag" translatesAutoresizingMaskIntoConstraints="NO" id="zx7-cz-KhC">
                                         <rect key="frame" x="25" y="0.0" width="100" height="100"/>
@@ -1381,7 +1381,7 @@
         <!--Delivery-->
         <scene sceneID="Igp-4J-Uk3">
             <objects>
-                <viewController storyboardIdentifier="DeliveryViewController" id="TFv-rI-wmt" customClass="DeliveryViewController" customModule="checkout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeliveryViewController" id="TFv-rI-wmt" customClass="DeliveryViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QJ1-2L-HSL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1527,7 +1527,7 @@
         <!--Payment-->
         <scene sceneID="l0h-zr-wbT">
             <objects>
-                <viewController storyboardIdentifier="PaymentViewController" id="Mm1-y7-k7Q" customClass="PaymentViewController" customModule="checkout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaymentViewController" id="Mm1-y7-k7Q" customClass="PaymentViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aah-Qd-9ss">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1664,7 +1664,7 @@
         <!--Confirm-->
         <scene sceneID="ThP-5z-qv7">
             <objects>
-                <viewController storyboardIdentifier="ConfirmViewController" id="viz-og-qYx" customClass="ConfirmViewController" customModule="checkout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmViewController" id="viz-og-qYx" customClass="ConfirmViewController" customModule="iosAlphaEcommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z5N-6e-52f">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
