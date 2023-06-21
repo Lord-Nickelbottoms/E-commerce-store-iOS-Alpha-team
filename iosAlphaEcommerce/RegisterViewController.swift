@@ -18,10 +18,14 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
 	
+	@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+	
 	let webService = WebService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+		
+		activityIndicator.isHidden.toggle()
         
 //        let validateEmail = validateEmail(enteredEmail: emailTextField.text!)
 //        let validatePhone = validatePhone(enteredPhone: contactTextField.text!)
@@ -60,41 +64,48 @@ class RegisterViewController: UIViewController {
     }
     
     
-    @IBAction func registerButton(_ sender: UIButton) {
-        
-        let validateEmail = validateEmail(enteredEmail: emailTextField.text!)
-        let validatePhone = validatePhone(enteredPhone: contactTextField.text!)
-        let validateName = validName(enteredName: firstNameTextField.text!)
-        let validateSurname = validName(enteredName: lastNameTextField.text!)
-        let validateAddress = validAddress(enteredAddress: addressTextField.text!)
-        
-        if(validateName == false)
-        {
-            addAlert(message: "Enter Name", title: "Enter Name")
-        }
-        if(validateSurname == false)
-        {
-            addAlert(message: "Enter Surname", title: "Enter Surname")
-        }
-        if(validateEmail == false)
-        {
-            addAlert(message: "Enter correct email", title: "Invalid email")
-        }
-        if(validatePhone == false)
-        {
-            addAlert(message: "Enter correct number", title: "Invalid number")
-        }
-        if(validateAddress == false)
-        {
-            addAlert(message: "Enter Address", title: "Invalid Address")
-        }
-        else
-        {
-            addAlert(message: "Successfully registered", title: "Success!")
-        }
-		webService.registerUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, email: emailTextField.text!, contact: contactTextField.text!, address: addressTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
+	@IBAction func registerButton(_ sender: UIButton) {
 		
-    }
+		activityIndicator.isHidden.toggle()
+		activityIndicator.startAnimating()
+		
+		DispatchQueue.main.asyncAfter(deadline: .now() + 4.0){ [self] in
+			
+			let validateEmail = validateEmail(enteredEmail: emailTextField.text!)
+			let validatePhone = validatePhone(enteredPhone: contactTextField.text!)
+			let validateName = validName(enteredName: firstNameTextField.text!)
+			let validateSurname = validName(enteredName: lastNameTextField.text!)
+			let validateAddress = validAddress(enteredAddress: addressTextField.text!)
+			
+			if(validateName == false)
+			{
+				addAlert(message: "Enter Name", title: "Enter Name")
+			}
+			if(validateSurname == false)
+			{
+				addAlert(message: "Enter Surname", title: "Enter Surname")
+			}
+			if(validateEmail == false)
+			{
+				addAlert(message: "Enter correct email", title: "Invalid email")
+			}
+			if(validatePhone == false)
+			{
+				addAlert(message: "Enter correct number", title: "Invalid number")
+			}
+			if(validateAddress == false)
+			{
+				addAlert(message: "Enter Address", title: "Invalid Address")
+			}
+			else
+			{
+				webService.registerUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, email: emailTextField.text!, contact: contactTextField.text!, address: addressTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
+				addAlert(message: "Successfully registered", title: "Success!")
+			}
+			activityIndicator.stopAnimating()
+			activityIndicator.isHidden.toggle()
+		}
+	}
     
     func addAlert(message: String, title: String) {
         let alert = UIAlertController(title: title, message: message,preferredStyle: UIAlertController.Style.alert)

@@ -12,7 +12,7 @@
         <array key="Kodchasan-Bold.ttf">
             <string>Kodchasan-Bold</string>
         </array>
-        <array key="ostrich-sans-medium.otf">
+        <array key="ostrich-sans-medium.ttf">
             <string>OstrichSans-Medium</string>
         </array>
     </customFonts>
@@ -153,26 +153,6 @@
                     <view key="view" contentMode="scaleToFill" id="wxx-bm-1Cw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zI6-yB-U6F">
-                                <rect key="frame" x="117" y="110" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Button"/>
-                                <connections>
-                                    <segue destination="4tg-0n-OAu" kind="show" id="Psr-Qm-NGo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-jm-1X1">
-                                <rect key="frame" x="144" y="501" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <segue destination="I25-w4-sdo" kind="show" id="pbR-Fx-WKZ"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hrA-Ps-Z1f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -851,13 +831,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM7-cZ-D8R">
-                                <rect key="frame" x="157.66666666666666" y="69" width="78" height="53"/>
+                                <rect key="frame" x="146.66666666666666" y="69" width="100" height="63.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="zJR-nL-UY2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="53"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-vW-pTO">
-                                <rect key="frame" x="121" y="134" width="151" height="271"/>
+                                <rect key="frame" x="121" y="144.66666666666666" width="151" height="260.33333333333337"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tote-bag" translatesAutoresizingMaskIntoConstraints="NO" id="Y0k-Q8-Do6">
                                         <rect key="frame" x="11.666666666666664" y="0.0" width="127.66666666666669" height="100"/>
@@ -879,7 +862,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXX-C3-goV">
-                                        <rect key="frame" x="0.0" y="129" width="151" height="31.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="129.00000000000003" width="151" height="31.333333333333343"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Avenue">
                                                 <attributes>
@@ -941,6 +924,11 @@
                                     <action selector="loginButton:" destination="I25-w4-sdo" eventType="touchUpInside" id="8rZ-5Q-58v"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="4OS-iU-iR4">
+                                <rect key="frame" x="231" y="718" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Uno-6T-esC"/>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -958,6 +946,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fqZ-hP-A0p"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="4OS-iU-iR4" id="8Hh-d3-7T5"/>
                         <outlet property="emailTextField" destination="WIi-5c-W9e" id="RbI-pk-nSf"/>
                         <outlet property="passwordTextField" destination="T9L-eP-PI0" id="usJ-Vq-twF"/>
                     </connections>
@@ -975,7 +964,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j60-MG-ie6">
-                                <rect key="frame" x="130" y="69" width="133.33333333333337" height="53"/>
+                                <rect key="frame" x="130" y="69" width="133.33333333333337" height="63.666666666666657"/>
                                 <fontDescription key="fontDescription" name="OstrichSans-Medium" family="Ostrich Sans" pointSize="53"/>
                                 <color key="textColor" red="0.12941176469999999" green="0.1450980392" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1089,6 +1078,11 @@
                                                     <action selector="registerButton:" destination="4tg-0n-OAu" eventType="touchUpInside" id="DQy-Vp-tHg"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wQk-c1-CAK">
+                                                <rect key="frame" x="250" y="568" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1158,7 +1152,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="VVQ-94-KTs"/>
                             </scrollView>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Za-eC-af7">
-                                <rect key="frame" x="121" y="134" width="151" height="250"/>
+                                <rect key="frame" x="121" y="144.66666666666663" width="151" height="239.33333333333337"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tote-bag" translatesAutoresizingMaskIntoConstraints="NO" id="zx7-cz-KhC">
                                         <rect key="frame" x="25" y="0.0" width="100" height="100"/>
@@ -1212,6 +1206,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HWd-Ki-c0i"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="wQk-c1-CAK" id="Fo8-M7-5J8"/>
                         <outlet property="addressTextField" destination="Av1-Qx-7QA" id="oMa-Xz-jQH"/>
                         <outlet property="confirmPasswordTextField" destination="3va-4x-hsB" id="g0Q-At-D4m"/>
                         <outlet property="contactTextField" destination="I2B-LE-pUP" id="a9i-4b-EvL"/>
