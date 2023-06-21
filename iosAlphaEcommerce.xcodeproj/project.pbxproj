@@ -26,6 +26,12 @@
 		4BFAE7AB2A41B6C000750AC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BFAE7AA2A41B6C000750AC3 /* LoginViewController.swift */; };
 		7030115C2A3257D100CAD1DA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7030115B2A3257D100CAD1DA /* Products.swift */; };
 		ABAC185D2A31D98B00B92BBA /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */; };
+		ABAE1B222A4306DF003EA994 /* DeliveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B212A4306DF003EA994 /* DeliveryViewController.swift */; };
+		ABAE1B242A4307CA003EA994 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B232A4307CA003EA994 /* PaymentViewController.swift */; };
+		ABAE1B262A43080D003EA994 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B252A43080D003EA994 /* Users.swift */; };
+		ABAE1B282A430871003EA994 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B272A430871003EA994 /* ConfirmViewController.swift */; };
+		ABAE1B2A2A430AAA003EA994 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B292A430AAA003EA994 /* AddressViewController.swift */; };
+		ABAE1B2C2A43180B003EA994 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B2B2A43180B003EA994 /* CategoryViewController.swift */; };
 		AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */; };
 		AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */; };
 		AD3EB30E2A31B19F00D2A24F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */; };
@@ -60,6 +66,12 @@
 		4BFAE7AA2A41B6C000750AC3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7030115B2A3257D100CAD1DA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		ABAE1B212A4306DF003EA994 /* DeliveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryViewController.swift; sourceTree = "<group>"; };
+		ABAE1B232A4307CA003EA994 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		ABAE1B252A43080D003EA994 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		ABAE1B272A430871003EA994 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		ABAE1B292A430AAA003EA994 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		ABAE1B2B2A43180B003EA994 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD3EB3082A31B19F00D2A24F /* iosAlphaEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAlphaEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +179,11 @@
 				CB3A26B52A31E46100A92405 /* MenCollectionViewCell.swift */,
 				4BFAE7A82A41B6B300750AC3 /* RegisterViewController.swift */,
 				4BFAE7AA2A41B6C000750AC3 /* LoginViewController.swift */,
+				ABAE1B212A4306DF003EA994 /* DeliveryViewController.swift */,
+				ABAE1B232A4307CA003EA994 /* PaymentViewController.swift */,
+				ABAE1B272A430871003EA994 /* ConfirmViewController.swift */,
+				ABAE1B292A430AAA003EA994 /* AddressViewController.swift */,
+				ABAE1B2B2A43180B003EA994 /* CategoryViewController.swift */,
 			);
 			path = iosAlphaEcommerce;
 			sourceTree = "<group>";
@@ -178,6 +195,7 @@
 				ABAC185C2A31D98B00B92BBA /* SingleViewController.swift */,
 				AD5E40EC2A3213A20079A9F7 /* Item1.swift */,
 				7030115B2A3257D100CAD1DA /* Products.swift */,
+				ABAE1B252A43080D003EA994 /* Users.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,13 +285,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAE1B2C2A43180B003EA994 /* CategoryViewController.swift in Sources */,
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
 				7030115C2A3257D100CAD1DA /* Products.swift in Sources */,
+				ABAE1B222A4306DF003EA994 /* DeliveryViewController.swift in Sources */,
+				ABAE1B242A4307CA003EA994 /* PaymentViewController.swift in Sources */,
 				4BB259872A42D4B0009A981C /* WebService.swift in Sources */,
 				CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */,
 				4BFAE7A92A41B6B300750AC3 /* RegisterViewController.swift in Sources */,
 				AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */,
 				AD5E40ED2A3213A20079A9F7 /* Item1.swift in Sources */,
+				ABAE1B282A430871003EA994 /* ConfirmViewController.swift in Sources */,
+				ABAE1B2A2A430AAA003EA994 /* AddressViewController.swift in Sources */,
+				ABAE1B262A43080D003EA994 /* Users.swift in Sources */,
 				AD3EB3102A31B19F00D2A24F /* ViewController.swift in Sources */,
 				AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */,
 				CB3A26B42A31D0B800A92405 /* menViewController.swift in Sources */,
