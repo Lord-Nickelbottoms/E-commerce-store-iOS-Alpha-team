@@ -50,7 +50,7 @@ class SingleViewController: UIViewController {
         lblProductName.text = name
         lblColor.text = colour
         lblPrice.text = String(price) + " ZAR"
-        lblGender.text = gender
+        //lblGender.text = gender
         imgItem.image = imgname
         
         if size == "XS" {

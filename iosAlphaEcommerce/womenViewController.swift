@@ -151,7 +151,7 @@ extension womenViewController: UICollectionViewDataSource{
 }
     extension womenViewController: UICollectionViewDelegateFlowLayout{
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: 190, height: 260)
+            return CGSize(width: 187, height: 260)
         }
     }
     extension womenViewController: UISearchBarDelegate{
