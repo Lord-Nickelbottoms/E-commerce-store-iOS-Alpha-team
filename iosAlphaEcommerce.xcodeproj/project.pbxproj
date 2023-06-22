@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B024EAE2A445F3400EDABB8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4B024EAD2A445F3400EDABB8 /* FirebaseAuth */; };
+		4B024EB02A44694300EDABB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B024EAF2A44694300EDABB8 /* GoogleService-Info.plist */; };
 		4BB259872A42D4B0009A981C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB259862A42D4B0009A981C /* WebService.swift */; };
 		4BBDD86F2A31E72000B4B563 /* ostrich-sans-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */; };
 		4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */; };
@@ -49,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B024EAF2A44694300EDABB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4BB259862A42D4B0009A981C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		4BBDD86D2A31E72000B4B563 /* ostrich-sans-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.otf"; sourceTree = "<group>"; };
 		4BBDD86E2A31E72000B4B563 /* ostrich-sans-medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ostrich-sans-medium.ttf"; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B024EAE2A445F3400EDABB8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +194,7 @@
 				ABAE1B272A430871003EA994 /* ConfirmViewController.swift */,
 				ABAE1B292A430AAA003EA994 /* AddressViewController.swift */,
 				ABAE1B2B2A43180B003EA994 /* CategoryViewController.swift */,
+				4B024EAF2A44694300EDABB8 /* GoogleService-Info.plist */,
 			);
 			path = iosAlphaEcommerce;
 			sourceTree = "<group>";
@@ -222,6 +227,9 @@
 			dependencies = (
 			);
 			name = iosAlphaEcommerce;
+			packageProductDependencies = (
+				4B024EAD2A445F3400EDABB8 /* FirebaseAuth */,
+			);
 			productName = iosAlphaEcommerce;
 			productReference = AD3EB3082A31B19F00D2A24F /* iosAlphaEcommerce.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +258,9 @@
 				Base,
 			);
 			mainGroup = AD3EB2FF2A31B19F00D2A24F;
+			packageReferences = (
+				4B024EAC2A445F3400EDABB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AD3EB3092A31B19F00D2A24F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +286,7 @@
 				4BFAE7A32A41B41A00750AC3 /* Kodchasan-Italic.ttf in Resources */,
 				AD3EB3132A31B19F00D2A24F /* Main.storyboard in Resources */,
 				4BFAE7A42A41B41A00750AC3 /* Kodchasan-Medium.ttf in Resources */,
+				4B024EB02A44694300EDABB8 /* GoogleService-Info.plist in Resources */,
 				4BFAE7A02A41B41A00750AC3 /* Kodchasan-ExtraLight.ttf in Resources */,
 				4BBDD8702A31E72000B4B563 /* ostrich-sans-medium.ttf in Resources */,
 				4BFAE7A52A41B41A00750AC3 /* Kodchasan-LightItalic.ttf in Resources */,
@@ -528,6 +540,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B024EAC2A445F3400EDABB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B024EAD2A445F3400EDABB8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B024EAC2A445F3400EDABB8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD3EB3002A31B19F00D2A24F /* Project object */;
 }

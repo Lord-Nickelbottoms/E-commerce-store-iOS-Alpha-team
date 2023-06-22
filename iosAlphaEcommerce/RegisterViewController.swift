@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -20,7 +21,8 @@ class RegisterViewController: UIViewController {
 	
 	@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 	
-	let webService = WebService()
+//	let webService = WebService()
+	
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,20 +59,46 @@ class RegisterViewController: UIViewController {
 //        {
 //            addAlert(message: "Successfully registered", title: "Success!")
 //        }
-        
-        
-        
+
         // Do any additional setup after loading the view.
     }
     
     
 	@IBAction func registerButton(_ sender: UIButton) {
 		
+		guard let firstname = firstNameTextField.text else{
+			return
+		}
+		
+		guard let lastname = lastNameTextField.text else{
+			return
+		}
+		
+		guard let email = emailTextField.text else{
+			return
+		}
+		
+		guard let contact = contactTextField.text else{
+			return
+		}
+		
+		guard let address = addressTextField.text else{
+			return
+		}
+		
+		guard let password = passwordTextField.text else{
+			return
+		}
+		
+		guard let confirmPassword = confirmPasswordTextField.text else{
+			return
+		}
+		
 		activityIndicator.isHidden.toggle()
 		activityIndicator.startAnimating()
-		
-		DispatchQueue.main.asyncAfter(deadline: .now() + 4.0){ [self] in
 			
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){ [self] in
+				
 			let validateEmail = validateEmail(enteredEmail: emailTextField.text!)
 			let validatePhone = validatePhone(enteredPhone: contactTextField.text!)
 			let validateName = validName(enteredName: firstNameTextField.text!)
@@ -99,11 +127,22 @@ class RegisterViewController: UIViewController {
 			}
 			else
 			{
-				webService.registerUser(firstName: firstNameTextField.text!, lastName: lastNameTextField.text!, email: emailTextField.text!, contact: contactTextField.text!, address: addressTextField.text!, password: passwordTextField.text!, confirmPassword: confirmPasswordTextField.text!)
-				addAlert(message: "Successfully registered", title: "Success!")
+				
+//				addAlert(message: "Successfully registered", title: "Success!")
+				let alert = UIAlertController(title: "Successfully Registered!", message: "Successfully Registered", preferredStyle: .alert)
+				alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+
+						let storyboard = UIStoryboard(name: "Main", bundle: nil)
+						let profileVC = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! UITabBarController
+						let vc = UIViewController()
+					vc.modalPresentationStyle = .fullScreen
+					self.present(profileVC, animated: true, completion: nil)
+				}))
+				self.present(alert, animated: true, completion: nil)
 			}
-			activityIndicator.stopAnimating()
-			activityIndicator.isHidden.toggle()
+			
+				activityIndicator.stopAnimating()
+				activityIndicator.isHidden.toggle()
 		}
 	}
     
@@ -140,5 +179,4 @@ class RegisterViewController: UIViewController {
             let predicate = NSPredicate(format:"SELF MATCHES %@", RegEx)
             return predicate.evaluate(with: enteredAddress)
         }
-	
 }
