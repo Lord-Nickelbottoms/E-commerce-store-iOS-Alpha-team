@@ -20,10 +20,16 @@ class PaymentViewController: UIViewController {
     var CardHolderName : String!
     var CardNumber : String!
     
+    var ProductAmountt :Double!
+    var Shippingg :Double!
+    
     var item: Users!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        ProductAmountt = 1200
+        print(ProductAmountt!)
+        print(Shippingg!)
         
         viewLayout()
         fieldInicialize()
@@ -33,6 +39,8 @@ class PaymentViewController: UIViewController {
     
     @IBAction func btnPay(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(identifier: "ConfirmViewController") as? ConfirmViewController
+        vc?.ProductAmount = ProductAmountt
+        vc?.Shipping = Shippingg
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     func dataAsign() {

@@ -21,8 +21,10 @@ class DeliveryViewController: UIViewController {
     var standardDeliveryAmount : Double = 75
     var expressDeliveryAmount : Double = 200
     var totalPurchaseCosts : Double = 300
-    
+//    var deliveryText :
     var deliveryAmount : Double = 0
+    
+//    let vc = storyboard?.instantiateV÷iewController(identifier: "PaymentViewController") as? PaymentViewController
     
 
     override func viewDidLoad() {
@@ -82,6 +84,7 @@ class DeliveryViewController: UIViewController {
 //        }
         else {
             let vc = storyboard?.instantiateViewController(identifier: "PaymentViewController") as? PaymentViewController
+            vc?.Shippingg = deliveryAmount
             self.navigationController?.pushViewController(vc!, animated: true)
 //            deliveryOptions()
             print(deliveryAmount)
@@ -113,6 +116,8 @@ class DeliveryViewController: UIViewController {
                 viewStandard.backgroundColor = .systemGray5
                 viewExpress.backgroundColor = .systemGray5
                 deliveryAmount = freeDeliveryAmount
+                let vc = storyboard?.instantiateViewController(identifier: "PaymentViewController") as? PaymentViewController
+//                vc?.Shippingg = deliveryAmount
                 print(deliveryAmount)
             }
             else {
@@ -128,6 +133,8 @@ class DeliveryViewController: UIViewController {
                 viewStandard.backgroundColor = .systemGray3
                 viewExpress.backgroundColor = .systemGray5
                 deliveryAmount = standardDeliveryAmount
+                let vc = storyboard?.instantiateViewController(identifier: "PaymentViewController") as? PaymentViewController
+//                vc?.Shippingg = deliveryAmount
                 print(deliveryAmount)
             }
             else {
@@ -143,6 +150,8 @@ class DeliveryViewController: UIViewController {
                 viewStandard.backgroundColor = .systemGray5
                 viewExpress.backgroundColor = .systemGray3
                 deliveryAmount = expressDeliveryAmount
+                let vc = storyboard?.instantiateViewController(identifier: "PaymentViewController") as? PaymentViewController
+//                vc?.Shippingg = deliveryAmount
                 print(deliveryAmount)
             }
             else {
