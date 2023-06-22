@@ -103,18 +103,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="man fashion" imageContentMode="scaleAspectFill"/>
+                                    <backgroundConfiguration key="background" cornerRadius="0.0" image="man fashion" imageContentMode="scaleAspectFill"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="TCT-h0-lpi" kind="show" id="4tm-Aw-PRx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqA-my-RYf">
-                                <rect key="frame" x="16" y="481" width="361" height="259"/>
+                                <rect key="frame" x="16" y="434" width="361" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="woman fashion" imageContentMode="scaleAspectFill"/>
+                                    <backgroundConfiguration key="background" cornerRadius="1" image="woman fashion" imageContentMode="scaleAspectFill"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="uYM-rM-ln9" kind="show" id="niw-yl-AbW"/>
@@ -129,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Women" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh8-SN-Mcz">
-                                <rect key="frame" x="16" y="701" width="361" height="39"/>
+                                <rect key="frame" x="16" y="654" width="361" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
