@@ -32,6 +32,8 @@
 		ABAE1B282A430871003EA994 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B272A430871003EA994 /* ConfirmViewController.swift */; };
 		ABAE1B2A2A430AAA003EA994 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B292A430AAA003EA994 /* AddressViewController.swift */; };
 		ABAE1B2C2A43180B003EA994 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAE1B2B2A43180B003EA994 /* CategoryViewController.swift */; };
+		AD02FF8E2A442A9A00E3FD30 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02FF8D2A442A9A00E3FD30 /* UserViewController.swift */; };
+		AD02FF902A442BD900E3FD30 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD02FF8F2A442BD900E3FD30 /* DetailsViewController.swift */; };
 		AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */; };
 		AD3EB30C2A31B19F00D2A24F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */; };
 		AD3EB30E2A31B19F00D2A24F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */; };
@@ -72,6 +74,8 @@
 		ABAE1B272A430871003EA994 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		ABAE1B292A430AAA003EA994 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 		ABAE1B2B2A43180B003EA994 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		AD02FF8D2A442A9A00E3FD30 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		AD02FF8F2A442BD900E3FD30 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = womenCollectionViewCell.swift; sourceTree = "<group>"; };
 		AD3EB3082A31B19F00D2A24F /* iosAlphaEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAlphaEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				AD3EB30B2A31B19F00D2A24F /* AppDelegate.swift */,
 				AD3EB30D2A31B19F00D2A24F /* SceneDelegate.swift */,
 				AD3EB30F2A31B19F00D2A24F /* ViewController.swift */,
+				AD02FF8D2A442A9A00E3FD30 /* UserViewController.swift */,
+				AD02FF8F2A442BD900E3FD30 /* DetailsViewController.swift */,
 				AD3EB3112A31B19F00D2A24F /* Main.storyboard */,
 				AD2742AD2A321DE300053A89 /* womenCollectionViewCell.swift */,
 				AD3EB31F2A31D17B00D2A24F /* womenViewController.swift */,
@@ -288,10 +294,12 @@
 				ABAE1B2C2A43180B003EA994 /* CategoryViewController.swift in Sources */,
 				CB3A26B22A31B66000A92405 /* Item.swift in Sources */,
 				7030115C2A3257D100CAD1DA /* Products.swift in Sources */,
+				AD02FF902A442BD900E3FD30 /* DetailsViewController.swift in Sources */,
 				ABAE1B222A4306DF003EA994 /* DeliveryViewController.swift in Sources */,
 				ABAE1B242A4307CA003EA994 /* PaymentViewController.swift in Sources */,
 				4BB259872A42D4B0009A981C /* WebService.swift in Sources */,
 				CB3A26B62A31E46100A92405 /* MenCollectionViewCell.swift in Sources */,
+				AD02FF8E2A442A9A00E3FD30 /* UserViewController.swift in Sources */,
 				4BFAE7A92A41B6B300750AC3 /* RegisterViewController.swift in Sources */,
 				AD2742AE2A321DE300053A89 /* womenCollectionViewCell.swift in Sources */,
 				AD5E40ED2A3213A20079A9F7 /* Item1.swift in Sources */,
