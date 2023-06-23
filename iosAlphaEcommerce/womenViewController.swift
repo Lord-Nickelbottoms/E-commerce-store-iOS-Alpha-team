@@ -188,7 +188,7 @@ extension womenViewController: UICollectionViewDataSource{
             //        vc?.colour = item[indexPath.row].colour
             vc?.price = searchProduct[indexPath.row].price
             //        vc?.gender = item[indexPath.row].gender
-            vc?.imgname = UIImage(named: searchProduct[indexPath.row].image)
+            vc?.imgname = searchProduct[indexPath.row].image
             //        vc?.size = item[indexPath.row].size
             //        vc?.count = count
             self.navigationController?.pushViewController(vc!, animated: true)

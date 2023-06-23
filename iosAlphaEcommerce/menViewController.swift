@@ -13,8 +13,6 @@ class menViewController: UIViewController {
     
     var item = [Products]()
     
-    var product: Products?
-    
     var searchProduct = [Products]()
     
     
@@ -29,7 +27,8 @@ class menViewController: UIViewController {
         
         fetchApiData { [self] in
             print("Success: Men Controller")
-            self.collectionView.reloadData()
+            searchProduct = item
+            collectionView.reloadData()
         }
         
     }
@@ -114,14 +113,14 @@ class menViewController: UIViewController {
 }
 extension menViewController: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return item.count
+        return searchProduct.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenCollectionViewCell", for: indexPath) as! MenCollectionViewCell
         cell.setup(with: item[indexPath.row])
         
-        let imageURL = item[indexPath.row].image as? String
+        let imageURL = searchProduct[indexPath.row].image as? String
         
         if let url = URL(string: imageURL!){
             
@@ -135,18 +134,14 @@ extension menViewController: UICollectionViewDataSource{
                     }
                 }
             }.resume()
-            cell.lblName.text = item[indexPath.row].title
-            cell.lblPrice.text = "R " + "\(item[indexPath.row].price)"
-            cell.productImageView.image = UIImage(named: item[indexPath.row].image)
+            cell.lblName.text = searchProduct[indexPath.row].title
+            cell.lblPrice.text = "R " + "\(searchProduct[indexPath.row].price)"
+            cell.productImageView.image = UIImage(named: searchProduct[indexPath.row].image)
             
             cell.reloadInputViews()
-            cell.layer.borderColor = UIColor.white.cgColor
+            cell.layer.borderColor = UIColor.black.cgColor
             cell.layer.borderWidth = 1
             cell.layer.cornerRadius = 10
-            
-            //return cell
-            //cell.titleTextLabel.text = articleVM.title
-            //cell.descriptionTextLabel.text = articleVM.description
         }
         return cell
     }
@@ -154,7 +149,7 @@ extension menViewController: UICollectionViewDataSource{
 
 extension menViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 190, height: 260)
+        return CGSize(width: 187, height: 260)
     }
 }
 
@@ -164,13 +159,12 @@ extension menViewController: UISearchBarDelegate{
         searchProduct = []
         if searchText == ""
         {
-//            searchProduct = items1
+            searchProduct = item
         }
-        for word in items1{
-            if word.name.lowercased().contains(searchText.lowercased())
+        for word in item{
+            if word.title.lowercased().contains(searchText.lowercased())
             {
-//                searchProduct.append(word)
-                self.collectionView.reloadData()
+              searchProduct.append(word)
             }
         }
         self.collectionView.reloadData()
@@ -187,12 +181,12 @@ extension menViewController: UICollectionViewDelegate{
 //
 //        defaults.set(count, forKey: "Countt")
         
-        vc?.name = item[indexPath.row].title
-        vc?.category = item[indexPath.row].category
+        vc?.name = searchProduct[indexPath.row].title
+        vc?.category = searchProduct[indexPath.row].category
 //        vc?.colour = searchProduct[indexPath.row].colour
-        vc?.price = item[indexPath.row].price
+        vc?.price = searchProduct[indexPath.row].price
 //        vc?.gender = searchProduct[indexPath.row].gender
-        vc?.imgname = UIImage(named: item[indexPath.row].image)
+        vc?.imgname = searchProduct[indexPath.row].image
 //        vc?.size = searchProduct[indexPath.row].size
 //        vc?.count = count
             self.navigationController?.pushViewController(vc!, animated: true)
