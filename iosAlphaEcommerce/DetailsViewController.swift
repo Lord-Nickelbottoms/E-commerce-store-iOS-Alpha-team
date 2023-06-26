@@ -29,6 +29,7 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var surnameLbl: UILabel!
+    
     @IBOutlet weak var NameLbl: UILabel!
     
     @IBOutlet weak var address: UILabel!
