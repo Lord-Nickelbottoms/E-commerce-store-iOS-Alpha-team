@@ -6,7 +6,9 @@
 //
 
 import UIKit
+import CoreData
 
+// MARK: - Add to Cart
 extension UIImageView {
     func downloadeds(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
         contentMode = mode
@@ -29,6 +31,7 @@ extension UIImageView {
 }
 
 class SingleViewController: UIViewController {
+    
     
     
     @IBOutlet weak var lblCategory: UILabel!
@@ -59,12 +62,14 @@ class SingleViewController: UIViewController {
     var colour : String!
     var gender : String!
     var image: UIImage!
-    var count : Int! = 0
+    
+  //  var count = 0
     
     
     var name : String!
     var imgname : String!
     
+    var array = [Any]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -73,7 +78,6 @@ class SingleViewController: UIViewController {
         lblColor.text = colour
         lblPrice.text = String(price) + " ZAR"
         //lblGender.text = gender
-        //imgItem.image = imgname
         imgItem.image = UIImage(named: String(imgname))
         
         let iimg = imgname
@@ -102,21 +106,52 @@ class SingleViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+    @IBAction func btnCartAdd(_ sender: Any) {
+        createCoreData()
+        
+        
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    @IBAction func btnAddToCart(_ sender: Any) {
-        count += 1
-//        lblCount.text = String(count)
-        cartCount.title = String(count)
+        let tabBar = self.tabBarController!.tabBar
+        let cartIcon = tabBar.items![1]
+        
+        //count = count + 1
+        var count = 0
+        print(count+1)
+        cartIcon.badgeColor = UIColor.red
+        cartIcon.badgeValue = "\(count + 1)"
+        //print(count)
     }
     
+    @IBAction func btnViewCart(_ sender: Any) {
+        
+    }
+    
+    // MARK: - Core Data Add to Cart
+    func createCoreData() {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "CartOrder", in: context)
+        let newOrder = Carts(entity: entity!, insertInto: context)
+        //imgItem.image = UIImage(named: String(imgname))
+        
+       
+        newOrder.productname = lblProductName.text
+        newOrder.productprice = lblPrice.text
+        newOrder.productquantity = lblCategory.text
+        //newOrder.productimage = UIImage(named:imgItem.image)
+        do {
+           try context.save()
+            cartList.append(newOrder)
+            
+            //go back to the previous view controller
+            navigationController?.popViewController(animated: true)
+        }
+        catch {
+             print("Context save error")
+        }
+        
+    }
+   
 }
 
